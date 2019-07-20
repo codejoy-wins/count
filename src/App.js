@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import ChildComponent from './ChildComponent'
 
 class App extends React.Component {
   constructor(){
@@ -51,6 +52,9 @@ class App extends React.Component {
         <button onClick={this.double}>Double</button>
         <button onClick={this.reset}>Reset</button>
         <div id="msgg"></div>
+        <ChildComponent count = {this.state.count} />
+        <ChildComponent count = {this.state.count+1} />
+
 
       </div>
     );
